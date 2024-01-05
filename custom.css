@@ -1,0 +1,141 @@
+.home_page_about_button {
+    border: none;
+    outline: none;
+    background: #dd2026;
+    transition: 0.3s ease-in-out;
+}
+
+.youtube_videos {
+    width: 150px;
+    height: 150px;
+}
+
+.about_us_page_company_introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_us_para_heading {
+    font-size: 22px;
+    color: black;
+    font-style: bold;
+}
+
+.home_page_about_button:hover {
+    background: #8b0005;
+}
+
+.vission_mission_expertise {
+    display: flex;
+    height: 85%;
+
+}
+
+.vission_mission_expertise i {
+    transition: transform 0.3s ease-in-out;
+}
+
+.vission_mission_expertise:hover i {
+    animation: flipAnimation 1s ease-in-out;
+}
+
+.category-products {
+    background: rgb(255, 220, 220);
+    border-radius: 8px;
+}
+
+.category-heading {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.purchase_category:hover {
+    background: #f13137;
+    color: #fff;
+}
+
+.category-product-image {
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.category-product-image:hover {
+    border-color: #dd2026;
+}
+
+.shop-item {
+    margin-bottom: 0 !important;
+}
+
+.next-previous-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.next-previous-buttons-a-tag {
+    padding: 8px;
+    background: #dd2026;
+    color: #fff !important;
+    border-radius: 12px;
+}
+
+.next-previous-buttons-a-tag:hover{
+    transform: scale(1.1);
+    background: #8b0005;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+}
+.product-column{
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.product-column ul {
+    list-style-type: none; /* Remove bullets for ul elements */
+    padding: 0;
+    margin: 0;
+}
+.product-list {
+    list-style-type: none; /* Remove bullets for ul elements */
+    padding: 0;
+    margin: 0;
+}
+
+.product-item {
+    font-size: smaller; /* Set font size to smaller */
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+@keyframes flipAnimation {
+
+    0%,
+    100% {
+        transform: scaleX(1);
+    }
+
+    50% {
+        transform: scaleX(-1);
+    }
+}
+
+@media screen and (max-width: 797px) {
+    .slide_first_para {
+        font-size: 14px !important;
+        line-height: 23px !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .slide_first_para {
+        font-size: 11px !important;
+        line-height: 21px !important;
+    }
+}

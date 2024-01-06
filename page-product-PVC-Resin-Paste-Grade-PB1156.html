@@ -36,6 +36,34 @@
 
 	<!-- Custom CSS -->
 	<link href="/custom.css" rel="stylesheet" type="text/css" />
+
+	<style>
+		#productDetailTable {
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		#productDetailTable th,
+		#productDetailTable td {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+			border-right: 1px solid #dddddd;
+			/* Add a right border for all columns */
+		}
+
+		#productDetailTable th:last-child,
+		#productDetailTable td:last-child {
+			border-right: none;
+			/* Remove right border for the last column */
+		}
+
+		#productDetailTable th {
+			background-color: #f2f2f2;
+		}
+	</style>
+
+
 </head>
 
 <body class="">
@@ -43,7 +71,7 @@
 	<!-- wrapper -->
 	<div id="wrapper">
 
-		<div id="header" class="navbar-toggleable-md sticky transparent clearfix">
+		<div id="header" class="navbar-toggleable-md sticky clearfix">
 
 			<!-- TOP NAV -->
 			<header id="topNav">
@@ -54,12 +82,11 @@
 						<i class="fa fa-bars"></i>
 					</button>
 
+					<!-- /BUTTONS -->
+
 					<!-- Logo -->
 					<a class="logo float-left" href="index.html">
-						<img src="assets/images/_smarty/logo-light.png" alt="" />
-						<!-- light logo -->
 						<img src="assets/images/_smarty/logo-dark.png" alt="" />
-						<!-- dark logo -->
 					</a>
 
 					<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
@@ -260,6 +287,7 @@
 
 							</ul>
 
+
 						</nav>
 					</div>
 
@@ -269,332 +297,257 @@
 
 		</div>
 
+		<section class="page-header page-header-xs">
+			<div class="container">
 
+				<h1>PVC</h1>
 
-		<!-- REVOLUTION SLIDER -->
-		<section id="slider" class="fullwidthbanner-container roundedcorners">
+				<!-- breadcrumbs -->
+				<ol class="breadcrumb">
+					<li><a href="/index.html">Home</a></li>
+					<li><a href="/page-products-new.html">Shop</a></li>
+					<li class="active">Product</li>
+				</ol><!-- /breadcrumbs -->
 
-			<div class="fullscreenbanner" data-navigationStyle="preview4">
-				<ul class="hide">
-
-					<!-- SLIDE  -->
-					<li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"
-						data-title="Slide title 1" data-thumb="demo_files/images/150x99/1-min.jpg">
-
-						<img src="assets/images/_smarty/1x1.png" data-lazyload="demo_files/images/1200x800/1-min.jpg"
-							alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
-
-						<div class="overlay dark-4">
-						</div>
-
-						<div class="tp-caption customin ltl tp-resizeme large_bold_white slide_first_heading"
-							data-x="center" data-y="230"
-							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-							data-speed="800" data-start="1200" data-easing="easeOutQuad" data-splitin="none"
-							data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"
-							data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 10;">
-							WELCOME TO TRIMLINE POLYMERS
-						</div>
-
-						<div class="tp-caption customin ltl tp-resizeme small_light_white slide_first_para"
-							data-x="center" data-y="350"
-							data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-							data-speed="800" data-start="1400" data-easing="easeOutQuad" data-splitin="none"
-							data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1"
-							data-endspeed="1000" data-endeasing="Power4.easeIn"
-							style="z-index: 10; width: 750px; max-width: 750px; white-space: normal; text-align:center;">
-							Unleashing Innovation in Polymers: Welcome to Trimline Polymers, where excellence meets
-							versatility, offering premium products like PP resin and more for a world of possibilities.
-						</div>
-
-					</li>
-
-					<!-- SLIDE -->
-					<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"
-						data-title="Slide title 2" data-thumb="demo_files/images/video/industry_thumb.png">
-
-						<img src="assets/images/_smarty/1x1.png" data-lazyload="demo_files/images/video/industry.png"
-							alt="video" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
-
-						<div class="tp-caption tp-fade fadeout fullscreenvideo" data-x="0" data-y="0" data-speed="1000"
-							data-start="1100" data-easing="Power4.easeOut" data-elementdelay="0.01"
-							data-endelementdelay="0.1" data-endspeed="1500" data-endeasing="Power4.easeIn"
-							data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true"
-							data-volume="mute" data-forceCover="1" data-aspectratio="16:9" data-forcerewind="on"
-							style="z-index: 2;">
-
-							<div class="overlay dark-4">
-								<!-- dark overlay [1 to 9 opacity] -->
-							</div>
-
-							<video class="fullvideo" preload="none" poster="demo_files/images/video/industry.png">
-								<source src="demo_files/images/video/industry.webm" type="video/webm" />
-								<source src="demo_files/images/video/industry.mp4" type="video/mp4" />
-							</video>
-
-						</div>
-
-					</li>
-
-					<!-- SLIDE  -->
-					<li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"
-						data-title="Slide title 3" data-thumb="demo_files/images/150x99/2-min.png">
-
-						<img src="assets/images/_smarty/1x1.png" data-lazyload="demo_files/images/1200x800/2-min.png"
-							alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
-
-						<div class="overlay dark-4">
-						</div>
-					</li>
-
-					<!-- SLIDE  -->
-					<li data-transition="random" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"
-						data-title="Slide title 4" data-thumb="demo_files/images/150x99/4-min.jpg">
-
-						<img src="assets/images/_smarty/1x1.png" data-lazyload="demo_files/images/1200x800/4-min.jpg"
-							alt="" data-bgfit="cover" data-bgposition="center bottom" data-bgrepeat="no-repeat" />
-
-						<div class="overlay dark-4">
-						</div>
-					</li>
-
-					<!-- SLIDE -->
-					<li data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"
-						data-title="Slide title 5" data-thumb="demo_files/images/video/industrysecond_thumb.png">
-
-						<img src="assets/images/_smarty/1x1.png"
-							data-lazyload="demo_files/images/video/industrysecond_thumb.png" alt="video"
-							data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat">
-
-						<div class="tp-caption tp-fade fadeout fullscreenvideo" data-x="0" data-y="0" data-speed="1000"
-							data-start="1100" data-easing="Power4.easeOut" data-elementdelay="0.01"
-							data-endelementdelay="0.1" data-endspeed="1500" data-endeasing="Power4.easeIn"
-							data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true"
-							data-volume="mute" data-forceCover="1" data-aspectratio="16:9" data-forcerewind="on"
-							style="z-index: 2;">
-
-							<div class="overlay dark-4">
-								<!-- dark overlay [1 to 9 opacity] -->
-							</div>
-
-							<video class="fullvideo" preload="none" poster="demo_files/images/video/industrysecond.png">
-								<source src="demo_files/images/video/industrysecond.webm" type="video/webm" />
-								<source src="demo_files/images/video/industrysecond.mp4" type="video/mp4" />
-							</video>
-
-						</div>
-
-					</li>
-
-				</ul>
 			</div>
 		</section>
-		<!-- /REVOLUTION SLIDER -->
-
+		<!-- /PAGE HEADER -->
 
 
 		<!-- -->
 		<section>
 			<div class="container">
 
-				<!-- -->
-				<article class="row">
-					<div class="col-md-6">
-						<!-- OWL SLIDER -->
-						<div class="owl-carousel buttons-autohide controlls-over m-0"
-							data-plugin-options='{"items": 1, "autoHeight": true, "navigation": true, "pagination": true, "transitionStyle":"backSlide", "progressBar":"true"}'>
-							<div>
-								<img class="img-fluid" src="demo_files/images/mockups/800x553/1-min.jpg" alt="">
-							</div>
-							<div>
-								<img class="img-fluid" src="demo_files/images/mockups/800x553/2-min.jpg" alt="">
-							</div>
+				<div class="row">
+
+					<!-- IMAGE -->
+					<div class="col-lg-4 col-sm-4">
+
+						<div class="thumbnail relative mb-3">
+
+							<figure id="zoom-primary" class="zoom" data-mode="mouseover">
+								<a class="lightbox bottom-right"
+									href="/images_products/PVC Resin/PVC Resin Paste Grade PB1156.png"
+									data-plugin-options='{"type":"image"}'><i class="fa fa-search"></i></a>
+
+								<img class="img-fluid" src="/images_products/PVC Resin/PVC Resin Paste Grade PB1156.png"
+									width="1200" height="1500" alt="This is the product title" />
+							</figure>
+
 						</div>
-						<!-- /OWL SLIDER -->
+
+						<!-- Thumbnails (required height:100px) -->
+						<div data-for="zoom-primary" class="zoom-more owl-carousel owl-padding-3 featured"
+							data-plugin-options='{"singleItem": false, "autoPlay": false, "navigation": true, "pagination": false}'>
+							<a class="thumbnail active"
+								href="/images_products/PVC Resin/PVC Resin Paste Grade PB1156.png">
+								<img src="/images_products/PVC Resin/PVC Resin Paste Grade PB1156.png" height="100"
+									alt="" />
+							</a>
+							<!-- <a class="thumbnail" href="demo_files/images/shop/products/1000x1500/p6.jpg">
+								<img src="demo_files/images/shop/products/100x100/p6.jpg" height="100" alt="" />
+							</a>
+							<a class="thumbnail" href="demo_files/images/shop/products/1000x1500/p7.jpg">
+								<img src="demo_files/images/shop/products/100x100/p7.jpg" height="100" alt="" />
+							</a>
+							<a class="thumbnail" href="demo_files/images/shop/products/1000x1500/p8.jpg">
+								<img src="demo_files/images/shop/products/100x100/p8.jpg" height="100" alt="" />
+							</a>
+							<a class="thumbnail" href="demo_files/images/shop/products/1000x1500/p9.jpg">
+								<img src="demo_files/images/shop/products/100x100/p9.jpg" height="100" alt="" />
+							</a>
+							<a class="thumbnail" href="demo_files/images/shop/products/1000x1500/p10.jpg">
+								<img src="demo_files/images/shop/products/100x100/p10.jpg" height="100" alt="" />
+							</a>
+							<a class="thumbnail" href="demo_files/images/shop/products/1000x1500/p11.jpg">
+								<img src="demo_files/images/shop/products/100x100/p11.jpg" height="100" alt="" />
+							</a> -->
+						</div>
+						<!-- /Thumbnails -->
+
 					</div>
-					<div class="col-md-6">
-						<h3>About Us</h3>
-						<p>Established in 1977, Trimline embarked on a mission to redefine the standards of printing and
-							packaging. Over the years, we have evolved and diversified, adapting to the dynamic needs of
-							the market.</p>
-						<p>Today, Trimline proudly serves as an Internal Supply Chain Consultant and Marketing Company.
-							With a wealth of experience and a commitment to excellence, we navigate the intricate
-							landscapes of industrial raw materials and packaging, providing tailored solutions to meet
-							the diverse needs of our clients.</p>
-						<a href="/page-about-us.html" class="btn btn-primary btn-3d home_page_about_button">Read
-							More</a>
+					<!-- /IMAGE -->
+
+					<!-- ITEM DESC -->
+					<div class="col-lg-5 col-sm-8">
+
+						<!-- price -->
+						<div class="shop-item-price">
+							<strong>PVC Resin Paste Grade PB1156 K66-68</strong>
+						</div>
+						<!-- /price -->
+
+						<hr />
+
+						<div class="clearfix mb-30">
+							Short Description
+						</div>
+
+
+						<!-- short description -->
+						<!-- <p>Buy this polymer. It's a good product.</p> -->
+						<div class="info-container">
+							<div class="product-column">
+								<ul>
+									<li>FOB Price: </li>
+									<li>Port: </li>
+									<li>MOQ: </li>
+									<li>CAS No: </li>
+									<li>HS Code: </li>
+									<li>Payment: </li>
+								</ul>
+							</div>
+							<div class="product-column">
+								<ul style="margin-left:-10px;">
+									<li>900-1200 USD/MT</li>
+									<li>Xingang, Qingdao, Shanghai, Ningbo</li>
+									<li>14MT</li>
+									<li>9002-86-2</li>
+									<li>390410</li>
+									<li>TT, LC</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /short description -->
+
+						<hr />
+
+						<!-- FORM -->
+						<form class="clearfix form-inline m-0" method="get" action="shop-cart.html">
+
+							<a href="#" class="btn btn-3d btn-reveal btn-red" style="margin-right: 5px;" id="emailBtn">
+								<i class="fa fa-envelope"></i>
+								<span>Send Email</span>
+							</a>
+
+							<a href="#" class="btn btn-3d btn-reveal btn-red">
+								<i class="fa fa-file-pdf-o"></i>
+								<span>Download PDF</span>
+							</a>
+
+							<a href="#" class="btn btn-3d btn-reveal btn-red" id="whatsappBtn">
+								<i class="fa fa-whatsapp"></i>
+								<span>Send Via Whatsapp</span>
+							</a>
+
+						</form>
+						<!-- /FORM -->
+
+
+						<hr />
+
+
 					</div>
-
-				</article>
-				<!-- / -->
-
-			</div>
-		</section>
-		<!-- / -->
-
-
-
-		<!-- Works -->
-		<section>
-			<div class="container">
-
-				<header class="mb-60 text-center">
-					<h2>Hot Products</h2>
-					<hr />
-				</header>
-
-				<div class="row mix-grid mt-80">
-
-					<div class="col-md-3 col-sm-3 mix development">
-						<!-- item -->
-
-						<div class="item-box">
-							<figure>
-								<span class="item-hover">
-									<span class="overlay dark-5"></span>
-									<span class="inner">
-
-										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="/images_products/PVC Resin/PVC Resin DG-800.png"
-											data-plugin-options='{"type":"image"}'>
-											<span class="fa fa-plus fs-20"></span>
-										</a>
-
-										<!-- details -->
-										<a class="ico-rounded" href="/page-product-PVC-Resin-DG-800.html">
-											<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-										</a>
-
-									</span>
-								</span>
-
-								<img class="img-fluid" src="/images_products/PVC Resin/PVC Resin DG-800.png" width="600" height="399"
-									alt="">
-							</figure>
-
-							<div class="item-box-desc">
-								<h2>PVC Resin DG-800</h2>
-								<p>K60 Pipe Grade</p>
-							</div>
-
-						</div>
-
-					</div><!-- /item -->
-
-					<div class="col-md-3 col-sm-3 mix development">
-						<!-- item -->
-
-						<div class="item-box">
-							<figure>
-								<span class="item-hover">
-									<span class="overlay dark-5"></span>
-									<span class="inner">
-
-										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="/images_products/PVC Resin/PVC Resin Paste Grade PB1156.png"
-											data-plugin-options='{"type":"image"}'>
-											<span class="fa fa-plus fs-20"></span>
-										</a>
-
-										<!-- details -->
-										<a class="ico-rounded" href="/page-product-PVC-Resin-Paste-Grade-PB1156.html">
-											<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-										</a>
-
-									</span>
-								</span>
-
-								<img class="img-fluid" src="/images_products/PVC Resin/PVC Resin Paste Grade PB1156.png" width="600" height="399"
-									alt="">
-							</figure>
-
-							<div class="item-box-desc">
-								<h2>PVC Resin Paste Grade PB1156</h2>
-								<p>K66-68</p>
-							</div>
-
-						</div>
-
-					</div><!-- /item -->
-
-					<div class="col-md-3 col-sm-3 mix development">
-						<!-- item -->
-
-						<div class="item-box">
-							<figure>
-								<span class="item-hover">
-									<span class="overlay dark-5"></span>
-									<span class="inner">
-
-										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="/images_products/PVC Resin/PVC Resin Paste Grade P450.png"
-											data-plugin-options='{"type":"image"}'>
-											<span class="fa fa-plus fs-20"></span>
-										</a>
-
-										<!-- details -->
-										<a class="ico-rounded" href="/page-product.html">
-											<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-										</a>
-
-									</span>
-								</span>
-
-								<img class="img-fluid" src="/images_products/PVC Resin/PVC Resin Paste Grade P450.png" width="600" height="399"
-									alt="">
-							</figure>
-
-							<div class="item-box-desc">
-								<h2>PVC Resin Paste Grade P450</h2>
-								<p>K66-68</p>
-							</div>
-
-						</div>
-
-					</div><!-- /item -->
-
-					<div class="col-md-3 col-sm-3 mix development">
-						<!-- item -->
-
-						<div class="item-box">
-							<figure>
-								<span class="item-hover">
-									<span class="overlay dark-5"></span>
-									<span class="inner">
-
-										<!-- lightbox -->
-										<a class="ico-rounded lightbox" href="/images_products/PVC Resin/PVC Resin Paste Grade PB1302.png"
-											data-plugin-options='{"type":"image"}'>
-											<span class="fa fa-plus fs-20"></span>
-										</a>
-
-										<!-- details -->
-										<a class="ico-rounded" href="/page-product.html">
-											<span class="glyphicon glyphicon-option-horizontal fs-20"></span>
-										</a>
-
-									</span>
-								</span>
-
-								<img class="img-fluid" src="/images_products/PVC Resin/PVC Resin Paste Grade PB1302.png" width="600" height="399"
-									alt="">
-							</figure>
-
-							<div class="item-box-desc">
-								<h2>PVC Resin Paste Grade PB1302</h2>
-								<p>K70-72</p>
-							</div>
-
-						</div>
-
-					</div><!-- /item -->
+					<!-- /ITEM DESC -->
 
 				</div>
 
+				<ul id="myTab" class="nav nav-tabs nav-top-border mt-80" role="tablist">
+					<li class="nav-item"><a class="nav-link active" href="#description"
+							data-toggle="tab">Description</a></li>
+					<li class="nav-item"><a class="nav-link" href="#specs" data-toggle="tab">Specifications</a></li>
+				</ul>
+
+
+				<div class="tab-content pt-20">
+
+					<!-- DESCRIPTION -->
+					<div role="tabpanel" class="tab-pane active" id="description">
+
+						<p>Emulsion PVC is a homo-polymer of PVC and it can be used for coating cloth, rotary forming,
+							macerating, spraying and foaming after mixed with plasticizer and other addition agent.It is
+							a light white and micro fine powder with a mean diameter of 1-2 um. The production
+							technology ATP MSP-3 PVC is coming from France Arkema with the same models produced.</p>
+
+						<div>
+							<h5>Applications</h5>
+							<p>Emulsion PVC is a homo-polymer of PVC and it can be used for coating cloth, rotary
+								forming,
+								macerating, spraying and foaming after mixed with plasticizer and other addition
+								agent.It is
+								a light white and micro fine powder with a mean diameter of 1-2 um. The production
+								technology ATP MSP-3 PVC is coming from France Arkema with the same models produced.</p>
+						</div>
+
+						<div>
+							<h5>Packaging</h5>
+							<p>Use paper bag with cuff (Inner lined plastic knitting net) , in net weight of 20 kg bag,
+								12 tons in one of 20’GP, 25 tons in one of 40’GP</p>
+						</div>
+					</div>
+
+					<!-- SPECIFICATIONS -->
+					<div role="tabpanel" class="tab-pane fade" id="specs">
+						<p>Technical Data Sheet</p>
+						<div class="table-responsive">
+							<table class="table table-hover" id="productDetailTable">
+								<thead>
+									<tr>
+										<th colspan="2">PARAMETER</th>
+										<th style="text-align: center;">GRADE</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td colspan="2">Standard: GB15592-2008</td>
+										<td style="text-align: center;">PB1156</td>
+									</tr>
+									<tr>
+										<td colspan="2">K-Value</td>
+										<td style="text-align: center;">67</td>
+									</tr>
+									<tr>
+										<td colspan="2">Viscidity, ml/g</td>
+										<td style="text-align: center;">100-120</td>
+									</tr>
+									<tr>
+										<td colspan="2">Viscidity, ml/g</td>
+										<td style="text-align: center;">900-1150</td>
+									</tr>
+									<tr>
+										<td colspan="2">Volatile component, % ≤</td>
+										<td style="text-align: center;">0.4</td>
+									</tr>
+									<tr>
+										<td colspan="2">Paste thickening rat (24h)/ ≤ %</td>
+										<td style="text-align: center;">100</td>
+									</tr>
+									<tr>
+										<td colspan="2">B-type viscosity /Pa.s</td>
+										<td style="text-align: center;">6.0-10.0</td>
+									</tr>
+									<tr>
+										<td colspan="2">Sieve residue %, mg/kg, 250um ≤</td>
+										<td style="text-align: center;">0</td>
+									</tr>
+									<tr>
+										<td colspan="2">B-type viscosity /Pa.s, 63um ≤</td>
+										<td style="text-align: center;">0.1</td>
+									</tr>
+									<tr>
+										<td colspan="2">VCM Residue PPM ≤</td>
+										<td style="text-align: center;">5</td>
+									</tr>
+									<tr>
+										<td colspan="2">Whiteness (160℃,10min)/ % ≥</td>
+										<td style="text-align: center;">80</td>
+									</tr>
+									<tr>
+										<td colspan="2">Number of impurity particles ≤</td>
+										<td style="text-align: center;">12</td>
+									</tr>
+									<tr>
+										<td colspan="2">Scraper fineness um ≤</td>
+										<td style="text-align: center;">100</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
-		<!-- /Works -->
-
+		<!-- / -->
 
 		<!-- FOOTER -->
 		<footer id="footer">
@@ -720,10 +673,45 @@
 	<!-- STYLESWITCHER - REMOVE -->
 	<!-- <script async src="demo_files/styleswitcher/styleswitcher.js"></script> -->
 
-	<!-- REVOLUTION SLIDER -->
-	<script src="assets/plugins/slider.revolution/js/jquery.themepunch.tools.min.js"></script>
-	<script src="assets/plugins/slider.revolution/js/jquery.themepunch.revolution.min.js"></script>
-	<script src="assets/js/view/demo.revolution_slider.js"></script>
+	<!-- PAGE LEVEL SCRIPTS -->
+	<script src="assets/js/view/demo.shop.js"></script>
+
+	<!-- JavaScript code to send via whatsapp -->
+	<script>
+		document.getElementById('whatsappBtn').addEventListener('click', function () {
+			var phoneNumber = '+923198551360';
+
+			var itemName = document.querySelector('.shop-item-price strong').textContent;
+
+			var whatsappMessage = "Hello, I want to purchase '" + itemName + "' this item";
+
+			var encodedMessage = encodeURIComponent(whatsappMessage);
+
+			var whatsappURL = "https://api.whatsapp.com/send?phone=" + phoneNumber + "&text=" + encodedMessage;
+
+			window.open(whatsappURL, '_blank');
+		});
+	</script>
+
+	<!-- JavaScript code to send via email -->
+	<script>
+		document.getElementById('emailBtn').addEventListener('click', function () {
+			var emailAddress = 'recipient@example.com';
+
+			var itemName = document.querySelector('.shop-item-price strong').textContent;
+
+			var emailSubject = "Regarding the Purchase of '" + itemName + "'";
+
+			var emailBody = "Hello,\n\nI am interested in purchasing '" + itemName + "'.\n\nPlease provide me with more information.";
+
+			var encodedSubject = encodeURIComponent(emailSubject);
+			var encodedBody = encodeURIComponent(emailBody);
+
+			var mailtoURL = "mailto:" + emailAddress + "?subject=" + encodedSubject + "&body=" + encodedBody;
+
+			window.location.href = mailtoURL;
+		});
+	</script>
 </body>
 
 </html>
